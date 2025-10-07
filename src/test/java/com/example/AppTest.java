@@ -1,38 +1,18 @@
-package com.example;
-
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import org.junit.Test;
+import static org.junit.Assert.assertTrue; // Usado para o assertTrue
 
 /**
- * Unit test for simple App.
+ * Teste unitário simples para a aplicação.
  */
-public class AppTest 
-    extends TestCase
-{
+public class AppTest {
+    
     /**
-     * Create the test case
-     *
-     * @param testName name of the test case
+     * Teste simples para verificar se o teste está rodando.
      */
-    public AppTest( String testName )
-    {
-        super( testName );
+    @Test // A anotação @Test diz ao JUnit que este é um método de teste
+    public void shouldAnswerWithTrue() {
+        assertTrue(true);
     }
-
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( AppTest.class );
-    }
-
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
-    }
+    
+    // Remova o construtor, o método suite() e a herança de TestCase
 }
